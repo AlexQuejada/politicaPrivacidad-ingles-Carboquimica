@@ -5,79 +5,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Processing Policy</title>
     <style>
-        html, body {
-            height: 100%; 
-            margin: 0; 
+       html, body {
+            height: 100%;
+            margin: 0;
         }
+        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            line-height: 1.8;
             background-image: url('https://ideogram.ai/assets/image/lossless/response/WuxSfcZhS6C2Od1p1LfIwQ');
-            background-size: cover; 
-            background-repeat: no-repeat; 
-            background-position: center; 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             background-attachment: fixed;
             padding: 20px;
+            color: #333;
         }
 
         .container {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
         }
-
-        ul{
-            text-align: justify;
+        
+        h1 {
+            text-align: center;
             margin-bottom: 30px;
+            color: #1a1a1a;
+            font-size: 2.2em;
+            border-bottom: 2px solid #4A90E2;
+            padding-bottom: 15px;
         }
 
-        h1 { text-align: center;
-             margin-bottom: 30px; 
-            color: #333; }
+        h2 {
+            color: #2c3e50;
+            margin: 30px 0 20px 0;
+            font-size: 1.6em;
+            text-align: justify;
+        }
 
         img.logo {
             display: block;
-            margin: 0 auto; 
-            max-width: 300px; 
+            margin: 0 auto 40px auto;
+            max-width: 300px;
+            height: auto;
         }
 
-        p { line-height: 1.6; 
-           }
-
-           footer {
-            background-color: #3333335d; 
-            color: rgb(235, 235, 235); 
-            text-align: center; 
-            padding: 10px; 
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+            padding: 0 15px;
+            font-size: 1.1em;
+            hyphens: auto;
+            word-spacing: 0.05em;
         }
 
-        label {
+        ul {
+            text-align: justify;
+            margin: 25px 0;
+            padding: 0 40px;
+        }
+
+        li {
+            margin-bottom: 15px;
+            line-height: 1.8;
+            text-align: justify;
+            padding-left: 10px;
+        }
+
+        a {
+            color: #4A90E2;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #357ABD;
+            text-decoration: underline;
+        }
+
+        .terminos-link {
             display: block;
-            margin-bottom: 8px; 
-            color: #333;
-            font-weight: bold; 
+            text-align: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #4A90E2;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
         }
 
-        button[type="submit"] {
-            background-color: #4A90E2; 
-            color: white; 
-            padding: 14px 28px; 
-            border: none; 
-            border-radius: 5px; 
-            cursor: pointer; 
-            font-size: 16px; 
-            display: block; 
-            margin: 30px auto; 
-            transition: background-color 0.3s ease; 
+        .terminos-link:hover {
+            background-color: #357ABD;
+            transform: translateY(-2px);
+            text-decoration: none;
         }
-        button[type="submit"]:hover {
-            background-color: #357ABD;} 
+
+        footer {
+            background-color: rgba(31, 31, 31, 0.9);
+            color: #ffffff;
+            padding: 30px;
+            text-align: center;
+            margin-top: 40px;
+            border-radius: 0 0 12px 12px;
+        }
+
+        footer img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        footer p {
+            margin: 0;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+        }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.4em;
+            }
+
+            p, li {
+                font-size: 1em;
+            }
+
+            ul {
+                padding: 0 20px;
+            } 
     </style>
 </head>
 <body>
